@@ -1,0 +1,23 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "lib": ["ES2023", "DOM"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "module": "NodeNext",
+    "target": "ES2022",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist"
+  },
+  "ts-node": {
+    "files": true,
+    "esm": true,
+    "compilerOptions": {
+      "module": "nodenext"
+    }
+  }
+}

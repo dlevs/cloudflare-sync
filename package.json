@@ -1,0 +1,28 @@
+{
+  "name": "cloudflare-sync",
+  "version": "1.0.0",
+  "description": "CLI for uploading images to cloudflare.",
+  "bin": "dist/src/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "author": "Dan Levett",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "commander": "^10.0.1",
+    "globby": "^13.1.4",
+    "ora": "^6.3.1",
+    "p-limit": "^4.0.0"
+  },
+  "devDependencies": {
+    "@dlevs/eslint-config": "^1.0.14",
+    "@types/node": "^20.2.5",
+    "eslint": "^8.42.0",
+    "typescript": "^5.1.3",
+    "vitest": "^0.32.0"
+  }
+}
