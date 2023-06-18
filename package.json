@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CLI for uploading images to cloudflare.",
   "bin": "dist/src/cli.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
